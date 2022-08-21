@@ -1,0 +1,16 @@
+.fonsii {
+    font-family: 'Berkshire Swash';
+    font-style: oblique;
+    font-weight: 700;
+    color: tomato;
+}
+
+.mybtn {
+    width: 200px;
+    height: 40px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+    margin: 0 10px;
+
+}
