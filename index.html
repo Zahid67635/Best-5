@@ -30,7 +30,7 @@
     <main>
         <section>
             <div class="row">
-                <div class="col-8 mb-4">
+                <div class="mb-4 col-md-8 col-sm-12">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
                         <div class="col">
                             <div class="card h-100">
@@ -124,16 +124,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-md-4 col-sm-12">
                     <div class="text-white border border-2 rounded p-3">
                         <h2 class="text-center fonsii">Selected - V</h2>
                         <div class="my-5">
-                            <ol>
-                                <li class="my-3"><span class="player-list"></span></li>
-                                <li class="my-3"><span class="player-list"></span></li>
-                                <li class="my-3"><span class="player-list"></span></li>
-                                <li class="my-3"><span class="player-list"></span></li>
-                                <li class="my-3"><span class="player-list"></span></li>
+                            <ol id="order-list">
+
                             </ol>
                         </div>
                     </div>
@@ -143,14 +139,14 @@
                             <label for="">Per Player : &emsp;</label>
                             <input id="player-price" type="text" placeholder="Give Player Price">
                             <button id="calculate-btn" class="mybtn my-4 text-center">Calculate</button>
-                            <h4>Player Expenses : &emsp; <span id="player-expenses"> 00</span></h4><br>
+                            <h4>Player Expenses : &emsp; $<span id="player-expenses">00</span></h4><br>
                             <label for="">Manager : &emsp; </label>
                             <input id="manager-price" type="text" placeholder="Give Manager Price"><br><br>
                             <label for="">Coach : &emsp;&emsp;</label>
                             <input id="coach-price" type="text" placeholder="Give Coach Price">
                             <button id="calculate-total" class="mybtn my-4 text-center">Calculate Total</button><br>
                         </div>
-                        <h4>Total :&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$<span id="total">00</span>
+                        <h4>Total :&emsp;$<span id="total">00</span>
                         </h4>
                     </div>
                 </div>

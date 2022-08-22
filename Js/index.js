@@ -5,23 +5,21 @@ function addPlayer(selectBtn, nameField) {
         document.getElementById(selectBtn).disabled = true;
         document.getElementById(selectBtn).style.backgroundColor = 'grey'
         const getname = getNameField.innerText;
-        const listItems = document.getElementsByClassName('player-list');
-        for (item of listItems) {
-            // console.log('clicked');
-            if (item.innerText === '') {
-                item.innerText = getname; break
-            }
-            else {
-                continue;
-            }
+        const childNum = document.getElementById('order-list').childElementCount;
 
+        if (childNum >= 5) {
+            alert('Maximum Number is selected');
+        }
+        else {
+            const node = document.createElement("li");
+            node.innerText = getname;
+            document.getElementById('order-list').appendChild(node);
         }
 
     })
 
 
 }
-
 addPlayer('select-btn-bappe', 'mbappe');
 addPlayer('select-btn-maria', 'maria');
 addPlayer('select-btn-ibra', 'ibra');
